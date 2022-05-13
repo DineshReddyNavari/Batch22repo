@@ -1,5 +1,7 @@
 package com.zensar.spring.service;
 
+import java.util.List;
+
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
@@ -24,6 +26,7 @@ public class ProductServiceImpl1 implements ProductService {
 
 		return repositoryImpl.insertProduct(product);
 	}
+	
 
 	public ProductRepository getRepositoryImpl() {
 		return repositoryImpl;
@@ -42,6 +45,23 @@ public class ProductServiceImpl1 implements ProductService {
 	@PreDestroy
 	public void myDestroy() {
 		System.out.println(" inside myDestroy()");
+	}
+
+
+	public boolean deleteProduct(int productId) {
+		return repositoryImpl.deleteProduct(productId);	
+	}
+
+
+	public int updateProduct(Product product) {
+		return repositoryImpl.updateProduct(product);
+	}
+
+
+	@Override
+	public List<Product> readProducts() {
+		
+		return repositoryImpl.readProducts();
 	}
 
 }
