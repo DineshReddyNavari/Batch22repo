@@ -1,4 +1,4 @@
-package com.zensar.couponController;
+package com.zensar.coupon.controller;
 
 import java.util.List;
 
