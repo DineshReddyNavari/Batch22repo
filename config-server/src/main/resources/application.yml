@@ -16,4 +16,4 @@ spring:
       server:
         default-label: main
         git:
-          uri: https://github.com/DineshReddyNavari/OLX-product
+          uri: https://github.com/DineshReddyNavari/test.git
