@@ -14,11 +14,12 @@ public class CouponServiceApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CouponServiceApplication.class, args);
+		System.out.println("!!!");
 	}
 
 	@Bean
 	public ModelMapper modeMapper() {
 		return new ModelMapper();
 	}
-     
+    
 }
